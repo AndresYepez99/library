@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+/*########## Colors ##########*/
+/* Cambio de color favorito */
+$favorite-hue: 219; /* Púrpura 250 - Verde 142 - Azul 230 - Rosa 340 */
+
+/* Modo de color HSL */
+$primary-color: hsl($favorite-hue, 100%, 50%);
+$dark-primary-color: hsl($favorite-hue, 100%, 13%);
+$light-primary-color: hsl($favorite-hue, 100%, 95%);
+
+/* Colores en base al color favorito */
+$white-color-fav: hsl($favorite-hue, 0%, 100%);
+$gray-color: hsl($favorite-hue, 8%, 96%);
+$text-color-light: hsl($favorite-hue, 1%, 27%);
+$text-color-dark: hsl($favorite-hue, 14%, 54%);
+$icon-color-light: hsl($favorite-hue, 13%, 47%);
+$icon-color-dark: hsl($favorite-hue, 11%, 56%);
+
+/*########## Font and typography ##########*/
+$body-font: 'Poppins', sans-serif;
+
+/* .5rem # 8px, 1rem # 16px, 1.5rem # 24px ... */
+$h1-font-size: 1.5rem;
+$h2-font-size: 1.25rem;
+$h3-font-size: 1.125rem;
+$normal-font-size: 0.938rem;
+$small-font-size: 0.813rem;
+$smaller-font-size: 0.75rem;
+
+
+/*########## Font weight ##########*/
+$font-200: 200;
+$font-300: 300;
+$font-normal: 400;
+$font-medium: 500;
+$font-semi-bold: 600;
+$font-extra-bold: 700;
+$font-black: 900;
+
+/*########## Margenes Bottom ##########*/
+
+/*########## z index ##########*/
+$z-fixed: 100;
+$z-modal: 1000;
+
+
+/* Font size for large devices */
+@media screen and (min-width: 968px) {
+    $h1-font-size: 1.5rem;
+    $h2-font-size: 1.25rem;
+    $h3-font-size: 1.125rem;
+    $normal-font-size: 0.938rem;
+    $small-font-size: 0.813rem;
+    $smaller-font-size: 0.75rem;
+}
+
+/*########## Variables Dark theme ##########*/
+
+/*########## Button Dark/Light ##########*/

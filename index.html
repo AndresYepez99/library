@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- REMIXICON -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/root/styles.css" />
+    <title>BookBase</title>
+  </head>
+  <body>
+    <div class="book-library">
+      <!-- Header -->
+      <header class="book-library__header">
+        <span class="logo book-library__logo">
+          BookBase
+        </span>
+        <div class="book-library__search-bar">
+          <i class="book-library__search-icon"></i>
+          <input
+            type="text"
+            class="book-library__search-input"
+            placeholder="Search..."
+          />
+        </div>
+        <button class="book-library__menu-btn" type="button">
+          <!-- Agrega aquí tu etiqueta de imagen para el botón de menú -->
+          <img
+            src="path/to/menu-icon.png"
+            alt="Menu"
+            class="book-library__menu-icon"
+          />
+        </button>
+        <button class="book-library__user-btn" type="button">
+          <img
+            src="path/to/user-image.jpg"
+            alt="User"
+            class="book-library__user-img"
+          />
+          <span class="book-library__user-text">Username</span>
+          <i class="book-library__user-icon"></i>
+        </button>
+      </header>
+
+      <!-- Navbar -->
+      <nav class="book-library__navbar">
+        <img
+          src="path/to/library-logo.jpg"
+          alt="Logo"
+          class="book-library__logo"
+        />
+        <a href="#" class="book-library__nav-btn">
+          <i class="book-library__nav-icon"></i>
+          Link 1
+        </a>
+      </nav>
+
+      <!-- Section "My Books" -->
+      <section class="book-library__my-books">
+        <!-- Book Presentation Card -->
+        <article class="book-card">
+          <img
+            src="path/to/book-cover.jpg"
+            alt="Book Cover"
+            class="book-card__cover"
+          />
+          <h2 class="book-card__title">Book Title</h2>
+          <h3 class="book-card__subtitle">Author Subtitle</h3>
+          <p class="book-card__description">Book description...</p>
+          <button class="book-card__btn-read">Mark as Read</button>
+          <button class="book-card__btn-delete">Delete Book</button>
+        </article>
+      </section>
+
+      <!-- Section "Book Information" -->
+      <section class="book-library__book-info">
+        <img
+          src="path/to/book-cover.jpg"
+          alt="Book Cover"
+          class="book-info__cover"
+        />
+        <h2 class="book-info__title">Book Title</h2>
+        <h3 class="book-info__subtitle">Author Subtitle</h3>
+        <p class="book-info__description">Detailed book description...</p>
+        <button class="book-info__btn-read">Mark as Read</button>
+        <button class="book-info__btn-delete">Delete Book</button>
+      </section>
+    </div>
+
+    <!-- MAIN JS -->
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>
