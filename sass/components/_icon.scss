@@ -1,0 +1,11 @@
+@use '../root/variables';
+
+.icon {
+  font-size: 20px;
+  color: variables.$dark-primary-color;
+  transition: .2s;
+}
+
+.icon:hover {
+  color: variables.$primary-color;
+}

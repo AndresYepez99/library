@@ -1,0 +1,6 @@
+@use '../root/variables';
+
+.logo {
+  font-size: 20px;
+  color: variables.$dark-primary-color;
+}

@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap"); /* @use './variables'; */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
 /*########## Colors ##########*/
 /* Cambio de color favorito */
@@ -8,7 +9,35 @@
 /*########## Font and typography ##########*/
 /* .5rem # 8px, 1rem # 16px, 1.5rem # 24px ... */
 /*########## Font weight ##########*/
-/*########## Margenes Bottom ##########*/
+/*########## Padding ##########*/
+/* padding-navbar
+padding-book-info */
+/*########## Padding ##########*/
+/*########## Shadows ##########*/
+/*########## z index ##########*/
+/* Font size for large devices */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
+/*########## Colors ##########*/
+/* Cambio de color favorito */
+/* Púrpura 250 - Verde 142 - Azul 230 - Rosa 340 */
+/* Modo de color HSL */
+/* Colores en base al color favorito */
+/*########## Font and typography ##########*/
+/* .5rem # 8px, 1rem # 16px, 1.5rem # 24px ... */
+/*########## Font weight ##########*/
+/*########## Padding ##########*/
+/* padding-navbar
+padding-book-info */
+/*########## Padding ##########*/
+/*########## Shadows ##########*/
 /*########## z index ##########*/
 /* Font size for large devices */
 /*########## Variables Dark theme ##########*/
@@ -44,11 +73,626 @@ ul {
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 img {
   max-width: 100%;
   height: auto;
+  object-fit: cover;
+}
+
+/*########## Variables Dark theme ##########*/
+/*########## Button Dark/Light ##########*/
+.logo {
+  font-size: 20px;
+  color: hsl(219, 100%, 13%);
+}
+
+/*########## Colors ##########*/
+/* Cambio de color favorito */
+/* Púrpura 250 - Verde 142 - Azul 230 - Rosa 340 */
+/* Modo de color HSL */
+/* Colores en base al color favorito */
+/*########## Font and typography ##########*/
+/* .5rem # 8px, 1rem # 16px, 1.5rem # 24px ... */
+/*########## Font weight ##########*/
+/*########## Padding ##########*/
+/* padding-navbar
+padding-book-info */
+/*########## Padding ##########*/
+/*########## Shadows ##########*/
+/*########## z index ##########*/
+/* Font size for large devices */
+/*########## Variables Dark theme ##########*/
+/*########## Button Dark/Light ##########*/
+.btn {
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+}
+
+/*########## Colors ##########*/
+/* Cambio de color favorito */
+/* Púrpura 250 - Verde 142 - Azul 230 - Rosa 340 */
+/* Modo de color HSL */
+/* Colores en base al color favorito */
+/*########## Font and typography ##########*/
+/* .5rem # 8px, 1rem # 16px, 1.5rem # 24px ... */
+/*########## Font weight ##########*/
+/*########## Padding ##########*/
+/* padding-navbar
+padding-book-info */
+/*########## Padding ##########*/
+/*########## Shadows ##########*/
+/*########## z index ##########*/
+/* Font size for large devices */
+/*########## Variables Dark theme ##########*/
+/*########## Button Dark/Light ##########*/
+.book-card {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(3, 3, 3, 0.15);
+}
+
+.book-card__cover {
+  width: 100%;
+  height: 250px;
+  border-radius: 8px 8px 0px 0px;
+}
+
+.book-card__info {
+  padding: 10px;
+}
+
+/*########## Colors ##########*/
+/* Cambio de color favorito */
+/* Púrpura 250 - Verde 142 - Azul 230 - Rosa 340 */
+/* Modo de color HSL */
+/* Colores en base al color favorito */
+/*########## Font and typography ##########*/
+/* .5rem # 8px, 1rem # 16px, 1.5rem # 24px ... */
+/*########## Font weight ##########*/
+/*########## Padding ##########*/
+/* padding-navbar
+padding-book-info */
+/*########## Padding ##########*/
+/*########## Shadows ##########*/
+/*########## z index ##########*/
+/* Font size for large devices */
+/*########## Variables Dark theme ##########*/
+/*########## Button Dark/Light ##########*/
+.icon {
+  font-size: 20px;
+  color: hsl(219, 100%, 13%);
+  transition: 0.2s;
+}
+
+.icon:hover {
+  color: hsl(219, 100%, 50%);
+}
+
+/*########## Colors ##########*/
+/* Cambio de color favorito */
+/* Púrpura 250 - Verde 142 - Azul 230 - Rosa 340 */
+/* Modo de color HSL */
+/* Colores en base al color favorito */
+/*########## Font and typography ##########*/
+/* .5rem # 8px, 1rem # 16px, 1.5rem # 24px ... */
+/*########## Font weight ##########*/
+/*########## Padding ##########*/
+/* padding-navbar
+padding-book-info */
+/*########## Padding ##########*/
+/*########## Shadows ##########*/
+/*########## z index ##########*/
+/* Font size for large devices */
+/*########## Variables Dark theme ##########*/
+/*########## Button Dark/Light ##########*/
+.book-library {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  height: 100vh;
+  width: 100vw;
+  z-index: 0;
+  overflow: hidden;
+}
+
+/*########## Media Queries - Tablet ##########*/
+@media (min-width: 500px) {
+  .book-library {
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 1fr;
+  }
+}
+/*########## Media Queries - Desktop ##########*/
+@media (min-width: 1023px) {
+  .book-library {
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: auto 1fr;
+  }
+}
+/*########## Colors ##########*/
+/* Cambio de color favorito */
+/* Púrpura 250 - Verde 142 - Azul 230 - Rosa 340 */
+/* Modo de color HSL */
+/* Colores en base al color favorito */
+/*########## Font and typography ##########*/
+/* .5rem # 8px, 1rem # 16px, 1.5rem # 24px ... */
+/*########## Font weight ##########*/
+/*########## Padding ##########*/
+/* padding-navbar
+padding-book-info */
+/*########## Padding ##########*/
+/*########## Shadows ##########*/
+/*########## z index ##########*/
+/* Font size for large devices */
+/*########## Variables Dark theme ##########*/
+/*########## Button Dark/Light ##########*/
+.book-library__search-bar,
+.book-library__user-btn {
+  display: none;
+}
+
+.book-library__header {
+  grid-area: 1/1/2/2;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 15px 15px 15px;
+  background-color: hsl(219, 0%, 100%);
+  transition: 0.5s;
+}
+
+/*########## Media Queries - Tablet ##########*/
+@media (min-width: 500px) {
+  .book-library__header {
+    display: none;
+  }
+}
+/*########## Media Queries - Desktop ##########*/
+@media (min-width: 1023px) {
+  .book-library__logo,
+  .book-library__menu-btn,
+  .book-library__layout {
+    display: none;
+  }
+  .book-library__search-bar,
+  .book-library__user-btn {
+    display: block;
+  }
+  .book-library__header {
+    grid-area: 1/2/2/4;
+    display: flex;
+    padding: 25px 20px 15px 20px;
+    box-shadow: 0px 0px 10px rgba(3, 3, 3, 0.15);
+  }
+  .book-library__search-input {
+    padding: 10px 5px;
+    background-color: hsl(219, 100%, 95%);
+    border: none;
+    outline: none;
+  }
+  .book-library__user-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 10px;
+  }
+  .book-library__user-img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+  }
+}
+.book-library__user-btn:hover i {
+  color: hsl(219, 100%, 50%);
+}
+
+/*########## Colors ##########*/
+/* Cambio de color favorito */
+/* Púrpura 250 - Verde 142 - Azul 230 - Rosa 340 */
+/* Modo de color HSL */
+/* Colores en base al color favorito */
+/*########## Font and typography ##########*/
+/* .5rem # 8px, 1rem # 16px, 1.5rem # 24px ... */
+/*########## Font weight ##########*/
+/*########## Padding ##########*/
+/* padding-navbar
+padding-book-info */
+/*########## Padding ##########*/
+/*########## Shadows ##########*/
+/*########## z index ##########*/
+/* Font size for large devices */
+/*########## Variables Dark theme ##########*/
+/*########## Button Dark/Light ##########*/
+.book-library__navbar {
+  position: absolute;
+  top: 0;
+  left: -500px;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  row-gap: 30px;
+  height: 100vh;
+  width: 80vw;
+  padding: 30px;
+  background-color: hsl(219, 0%, 100%);
+  z-index: 100;
+  transition: 0.2s;
+}
+
+.book-library__logo-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.book-library__nav-logo i {
+  padding: 5px;
+  font-size: 22px;
+  color: hsl(219, 100%, 50%);
+}
+
+.book-library__nav-container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  row-gap: 15px;
+}
+
+.book-library__nav-btn {
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+  font-size: 18px;
+  color: hsl(219, 1%, 27%);
+  transition: 0.3s;
+}
+
+.book-library__nav-icon {
+  padding: 5px;
+  border-radius: 8px;
+  font-size: 20px;
+  color: hsl(219, 11%, 56%);
+  transition: 0.3s;
+}
+
+.book-library__nav-btn:hover {
+  color: hsl(219, 100%, 50%);
+}
+
+.book-library__nav-btn:hover .book-library__nav-icon {
+  color: hsl(219, 0%, 100%);
+  background-color: hsl(219, 100%, 50%);
+}
+
+/*########## Media Queries - Tablet ##########*/
+@media (min-width: 500px) {
+  .book-library__nav-logo span,
+  .book-library__nav-btn-close,
+  .book-library__nav-txt {
+    display: none;
+  }
+  .book-library__navbar {
+    grid-area: 1/1/2/2;
+    position: static;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 30px;
+    width: 54px;
+    padding: 0;
+    padding-top: 20px;
+    box-shadow: 0px 0px 10px rgba(3, 3, 3, 0.15);
+  }
+  .book-library__logo-container {
+    justify-content: center;
+  }
+}
+/*########## Media Queries - Desktop ##########*/
+@media (min-width: 1023px) {
+  .book-library__nav-logo span,
+  .book-library__nav-txt {
+    display: block;
+  }
+  .book-library__navbar {
+    grid-area: 1/1/4/2;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 30px;
+    width: auto;
+    padding: 30px;
+  }
+  .book-library__logo-container {
+    justify-content: start;
+    width: 100%;
+  }
+  .book-library__nav-logo {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+  }
+}
+/*########## Reusables ##########*/
+/*########## Colors ##########*/
+/* Cambio de color favorito */
+/* Púrpura 250 - Verde 142 - Azul 230 - Rosa 340 */
+/* Modo de color HSL */
+/* Colores en base al color favorito */
+/*########## Font and typography ##########*/
+/* .5rem # 8px, 1rem # 16px, 1.5rem # 24px ... */
+/*########## Font weight ##########*/
+/*########## Padding ##########*/
+/* padding-navbar
+padding-book-info */
+/*########## Padding ##########*/
+/*########## Shadows ##########*/
+/*########## z index ##########*/
+/* Font size for large devices */
+/*########## Variables Dark theme ##########*/
+/*########## Button Dark/Light ##########*/
+.book-library__my-books {
+  grid-area: 2/1/3/2;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  background-color: hsl(219, 0%, 100%);
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+/* Para navegadores basados en WebKit */
+.book-library__my-books::-webkit-scrollbar {
+  width: 3px; /* Ancho de la barra de desplazamiento */
+}
+
+.book-library__my-books::-webkit-scrollbar-thumb {
+  background-color: #0059ff; /* Color del 'pulgón' de la barra de desplazamiento */
+  border-radius: 6px; /* Bordes redondeados del 'pulgón' */
+}
+
+/* Para Internet Explorer y Edge */
+.book-library__my-books::-ms-scrollbar {
+  width: 12px; /* Ancho de la barra de desplazamiento */
+}
+
+.book-library__my-books::-ms-thumb {
+  background-color: #0059ff; /* Color del 'pulgón' de la barra de desplazamiento */
+  border-radius: 6px; /* Bordes redondeados del 'pulgón' */
+}
+
+.my-books-cards {
+  height: auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(3, 1fr);
+  grid-row-gap: 15px;
+}
+
+/*########## Media Queries - Tablet ##########*/
+@media (min-width: 500px) {
+  .book-library__my-books {
+    grid-area: 1/2/2/3;
+    padding: 25px;
+  }
+}
+/*########## Media Queries - Desktop ##########*/
+@media (min-width: 1023px) {
+  .book-library__my-books {
+    grid-area: 2/2/4/3;
+    padding: 25px;
+    margin: 15px;
+    width: auto;
+    height: auto;
+    border-radius: 8px;
+  }
+  .my-books-cards {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    gap: 15px;
+  }
+}
+/*########## Colors ##########*/
+/* Cambio de color favorito */
+/* Púrpura 250 - Verde 142 - Azul 230 - Rosa 340 */
+/* Modo de color HSL */
+/* Colores en base al color favorito */
+/*########## Font and typography ##########*/
+/* .5rem # 8px, 1rem # 16px, 1.5rem # 24px ... */
+/*########## Font weight ##########*/
+/*########## Padding ##########*/
+/* padding-navbar
+padding-book-info */
+/*########## Padding ##########*/
+/*########## Shadows ##########*/
+/*########## z index ##########*/
+/* Font size for large devices */
+/*########## Variables Dark theme ##########*/
+/*########## Button Dark/Light ##########*/
+.book-library__book-info {
+  position: absolute;
+  top: 0;
+  right: -1000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  row-gap: 15px;
+  height: 100vh;
+  width: 100vw;
+  padding-top: 80px;
+  background-color: hsl(219, 0%, 100%);
+  z-index: 100;
+  transition: 0.2s;
+}
+
+.book-info__cover {
+  height: 200px;
+  width: 160px;
+  border-radius: 8px;
+}
+
+.book-info__btn-delete {
+  display: flex;
+  place-items: center;
+  column-gap: 5px;
+  padding: 15px 20px;
+  border-radius: 8px;
+  font-size: 0.938rem;
+  font-family: 900;
+  color: hsl(219, 0%, 100%);
+  background-color: hsl(219, 100%, 50%);
+  transition: 0.2s;
+}
+
+.book-info__btn-delete i {
+  color: hsl(219, 0%, 100%);
+}
+
+.book-info__btn-delete:hover {
+  background-color: hsl(219, 100%, 13%);
+}
+
+.book-info__btn-read {
+  scale: 1.5;
+}
+
+/*########## Media Queries - Tablet ##########*/
+@media (min-width: 500px) {
+  .book-library__book-info {
+    grid-area: 1/2/2/3;
+    position: relative;
+    height: 100%;
+    width: 100%;
+  }
+}
+/*########## Media Queries - Desktop ##########*/
+@media (min-width: 1023px) {
+  .book-library__book-info {
+    grid-area: 2/3/4/3;
+    position: static;
+    height: 100%;
+    width: 100%;
+    padding: 25px 20px;
+    box-shadow: 0px 0px 10px rgba(3, 3, 3, 0.15);
+    z-index: -100;
+  }
+}
+/*########## Colors ##########*/
+/* Cambio de color favorito */
+/* Púrpura 250 - Verde 142 - Azul 230 - Rosa 340 */
+/* Modo de color HSL */
+/* Colores en base al color favorito */
+/*########## Font and typography ##########*/
+/* .5rem # 8px, 1rem # 16px, 1.5rem # 24px ... */
+/*########## Font weight ##########*/
+/*########## Padding ##########*/
+/* padding-navbar
+padding-book-info */
+/*########## Padding ##########*/
+/*########## Shadows ##########*/
+/*########## z index ##########*/
+/* Font size for large devices */
+/*########## Variables Dark theme ##########*/
+/*########## Button Dark/Light ##########*/
+.book-info__form {
+  position: absolute;
+  top: -1000px;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  height: 100vh;
+  width: 100vw;
+  padding: 25px 30px;
+  background-color: hsl(219, 0%, 100%);
+  transition: 0.5s;
+}
+
+.form-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-input,
+.form-textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid hsl(219, 100%, 13%);
+  border-radius: 5px;
+  /* background-color: variables.$light-primary-color */
+}
+
+.form-checkbox {
+  scale: 1.5;
+}
+
+.book-info__btn-submit {
+  display: flex;
+  justify-content: center;
+  column-gap: 5px;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 0.938rem;
+  font-family: 900;
+  color: hsl(219, 0%, 100%);
+  background-color: hsl(219, 100%, 50%);
+  transition: 0.2s;
+}
+
+.book-info__btn-submit:hover {
+  background-color: hsl(219, 100%, 13%);
+}
+
+/*########## Media Queries - Tablet ##########*/
+@media (min-width: 500px) {
+  .book-info__form {
+    grid-area: 1/2/2/3;
+    left: -1000px;
+    height: 100%;
+    width: 100%;
+    padding: 25px 40px;
+  }
+}
+/*########## Media Queries - Desktop ##########*/
+@media (min-width: 1023px) {
+  .book-library__form-container {
+    position: absolute;
+    top: -1500px;
+    left: 0;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    width: 100vw;
+    z-index: 1000;
+    background: rgba(0, 100, 255, 0);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+  }
+  .book-info__form {
+    grid-area: auto;
+    position: static;
+    width: 400px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

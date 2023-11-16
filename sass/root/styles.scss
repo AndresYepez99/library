@@ -1,14 +1,16 @@
-@use './variables';
+/* @use './variables'; */
 @use '../base/base';
-
-// Importaciones de estilos específicos de componentes
-@import '../components/header';
-@import '../components/navbar';
-@import '../components/my-books';
-@import '../components/book-info';
 
 // Importaciones de estilos reutilizables
 @import '../components/logo';
 @import '../components/button';
-@import '../components/card';
+@import '../components/book-card';
 @import '../components/icon';
+
+// Importaciones de estilos específicos de componentes
+@import '../layout/main_container';
+@import '../components/header';
+@import '../components/navbar';
+@import '../components/my-books';
+@import '../components/book-info';
+@import '../components/form';

@@ -16,80 +16,200 @@
     <div class="book-library">
       <!-- Header -->
       <header class="book-library__header">
+        <button class="icon btn book-library__menu-btn" type="button">
+          <i class="ri-menu-line"></i>
+        </button>
+
         <span class="logo book-library__logo">
-          BookBase
+          <i class="ri-book-2-fill"></i>
+          <strong>Book</strong>Base
         </span>
+
+        <button class="btn book-library__layout" type="button">
+          <i class="icon ri-function-line"></i>
+        </button>
+
         <div class="book-library__search-bar">
           <i class="book-library__search-icon"></i>
           <input
             type="text"
             class="book-library__search-input"
-            placeholder="Search..."
+            placeholder="Search book"
           />
         </div>
-        <button class="book-library__menu-btn" type="button">
-          <!-- Agrega aquí tu etiqueta de imagen para el botón de menú -->
+
+        <button class="btn book-library__user-btn" type="button">
           <img
-            src="path/to/menu-icon.png"
-            alt="Menu"
-            class="book-library__menu-icon"
-          />
-        </button>
-        <button class="book-library__user-btn" type="button">
-          <img
-            src="path/to/user-image.jpg"
+            src="https://images.unsplash.com/photo-1634926878768-2a5b3c42f139?q=80&w=1656&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="User"
             class="book-library__user-img"
           />
           <span class="book-library__user-text">Username</span>
-          <i class="book-library__user-icon"></i>
+          <i class="icon ri-arrow-down-s-line"></i>
         </button>
       </header>
 
       <!-- Navbar -->
       <nav class="book-library__navbar">
-        <img
-          src="path/to/library-logo.jpg"
-          alt="Logo"
-          class="book-library__logo"
-        />
-        <a href="#" class="book-library__nav-btn">
-          <i class="book-library__nav-icon"></i>
-          Link 1
-        </a>
+        <div class="book-library__logo-container">
+          <span class="logo book-library__nav-logo">
+            <i class="ri-book-2-fill"></i>
+            <span><strong>Book</strong>Base</span>
+          </span>
+
+          <button class="btn book-library__nav-btn-close">
+            <i class="icon book-library__nav-icon ri-arrow-left-s-line"></i>
+          </button>
+        </div>
+
+        <div class="book-library__nav-container">
+          <button class="btn book-library__nav-btn">
+            <i class="icon book-library__nav-icon ri-book-3-line"></i>
+            <span class="book-library__nav-txt">My books</span>
+          </button>
+          <button class="btn book-library__nav-btn">
+            <i class="icon book-library__nav-icon ri-settings-3-line"></i>
+            <span class="book-library__nav-txt">Theme</span>
+          </button>
+          <button class="btn book-library__nav-btn">
+            <i class="icon book-library__nav-icon ri-global-line"></i>
+            <span class="book-library__nav-txt">Lenguaje</span>
+          </button>
+          <button class="btn book-library__nav-btn">
+            <i class="icon book-library__nav-icon ri-tools-line"></i>
+            <span class="book-library__nav-txt">Ajustes</span>
+          </button>
+          <button class="btn book-library__nav-btn">
+            <i class="icon book-library__nav-icon ri-shut-down-line"></i>
+            <span class="book-library__nav-txt">Cerrar Sesión</span>
+          </button>
+        </div>
       </nav>
 
       <!-- Section "My Books" -->
       <section class="book-library__my-books">
-        <!-- Book Presentation Card -->
-        <article class="book-card">
-          <img
-            src="path/to/book-cover.jpg"
-            alt="Book Cover"
-            class="book-card__cover"
-          />
-          <h2 class="book-card__title">Book Title</h2>
-          <h3 class="book-card__subtitle">Author Subtitle</h3>
-          <p class="book-card__description">Book description...</p>
-          <button class="book-card__btn-read">Mark as Read</button>
-          <button class="book-card__btn-delete">Delete Book</button>
-        </article>
+        <div class="my-books-header">
+          <h2 class="my-books-header__title">My Books</h2>
+          <!-- <button class="my-books-header__btn">Mi Botón</button> -->
+        </div>
+
+        <div class="my-books-cards">
+          <!-- Book Presentation Card -->
+          <article class="book-card">
+            <img
+              src="images/cover-1.png"
+              alt="Book Cover"
+              class="book-card__cover"
+            />
+
+            <div class="book-card__info">
+              <h2 class="book-card__title">Book Title</h2>
+              <h3 class="book-card__subtitle">Author Subtitle</h3>
+            </div>
+
+            <!-- <p class="book-card__description">Book description...</p>
+            <button class="book-card__btn-read">Mark as Read</button>
+            <button class="book-card__btn-delete">Delete Book</button> -->
+          </article>
+
+          <article class="book-card">
+            <img
+              src="images/cover-1.png"
+              alt="Book Cover"
+              class="book-card__cover"
+            />
+
+            <div class="book-card__info">
+              <h2 class="book-card__title">Book Title</h2>
+              <h3 class="book-card__subtitle">Author Subtitle</h3>
+            </div>
+
+            <!-- <p class="book-card__description">Book description...</p>
+            <button class="book-card__btn-read">Mark as Read</button>
+            <button class="book-card__btn-delete">Delete Book</button> -->
+          </article>
+
+          <article class="book-card">
+            <img
+              src="images/cover-1.png"
+              alt="Book Cover"
+              class="book-card__cover"
+            />
+
+            <div class="book-card__info">
+              <h2 class="book-card__title">Book Title</h2>
+              <h3 class="book-card__subtitle">Author Subtitle</h3>
+            </div>
+
+            <!-- <p class="book-card__description">Book description...</p>
+            <button class="book-card__btn-read">Mark as Read</button>
+            <button class="book-card__btn-delete">Delete Book</button> -->
+          </article>
+        </div>
       </section>
 
       <!-- Section "Book Information" -->
       <section class="book-library__book-info">
         <img
-          src="path/to/book-cover.jpg"
+          src="images/cover-1.png"
           alt="Book Cover"
           class="book-info__cover"
         />
         <h2 class="book-info__title">Book Title</h2>
         <h3 class="book-info__subtitle">Author Subtitle</h3>
         <p class="book-info__description">Detailed book description...</p>
-        <button class="book-info__btn-read">Mark as Read</button>
-        <button class="book-info__btn-delete">Delete Book</button>
+        <input class="book-info__btn-read" type="checkbox">Leido</input>
+        <button class="btn book-info__btn-delete" type="button">
+          <i class="ri-delete-bin-line"></i>
+          Delete Book</button>
+      </section>
+
+      <!-- Section "Form" -->
+      <section class="book-library__form-container">
+        <form class="book-info__form">
+
+          <div class="form-header">
+            <h2 class="form-title">Add book</h2>
+            <button class="btn form-btn-close" type="button">
+              <i class="icon ri-close-line"></i>
+            </button>
+          </div>
+          
+          <div class="form-group">
+            <label for="titulo" class="form-label">Título del libro</label>
+            <input type="text" id="titulo" class="form-input" />
+          </div>
+      
+          <div class="form-group">
+            <label for="autor" class="form-label">Nombre del autor</label>
+            <input type="text" id="autor" class="form-input" />
+          </div>
+      
+          <div class="form-group">
+            <label for="descripcion" class="form-label">Descripción</label>
+            <textarea id="descripcion" class="form-textarea"></textarea>
+          </div>
+      
+          <div class="form-group">
+            <label for="paginas" class="form-label">Número de páginas</label>
+            <input type="number" id="paginas" class="form-input" />
+          </div>
+      
+          <div class="form-group">
+            <input type="checkbox" id="leido" class="form-checkbox" />
+            <label for="leido" class="form-label">¿Leído?</label>
+          </div>
+      
+          <button type="submit" class="btn book-info__btn-submit">
+            <i class="ri-add-line"></i>
+            Agregar Libro
+          </button>
+        </form>
       </section>
     </div>
+
+
+    
 
     <!-- MAIN JS -->
     <script type="module" src="js/main.js"></script>

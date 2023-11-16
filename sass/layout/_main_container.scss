@@ -1,0 +1,32 @@
+@use '../root/variables';
+
+.book-library {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  height: 100vh;
+  width: 100vw;
+  z-index: 0;
+  overflow: hidden;
+}
+
+/*########## Media Queries - Tablet ##########*/
+
+@media (min-width: 500px) {
+  .book-library {
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 1fr;
+  }
+}
+
+/*########## Media Queries - Desktop ##########*/
+
+@media (min-width: 1023px) {
+  .book-library {
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: auto 1fr;
+  }
+}

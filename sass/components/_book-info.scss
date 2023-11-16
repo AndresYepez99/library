@@ -1,0 +1,72 @@
+@use '../root/variables';
+
+.book-library__book-info {
+  position: absolute;
+  top: 0;
+  right: -1000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  row-gap: 15px;
+  height: 100vh;
+  width: 100vw;
+  padding-top: 80px;
+  background-color: variables.$white-color-fav;
+  z-index: 100;
+  transition: .2s;
+}
+
+.book-info__cover {
+  height: 200px;
+  width: 160px;
+  border-radius: 8px;
+}
+.book-info__btn-delete {
+  display: flex;
+  place-items: center;
+  column-gap: 5px;
+  padding: 15px 20px;
+  border-radius: variables.$boder-radius;
+  font-size: variables.$normal-font-size;
+  font-family: variables.$font-black;
+  color: variables.$white-color-fav;
+  background-color: variables.$primary-color;
+  transition: .2s;
+}
+
+.book-info__btn-delete i {
+  color: variables.$white-color-fav;
+}
+
+.book-info__btn-delete:hover {
+  background-color: variables.$dark-primary-color;
+}
+
+.book-info__btn-read {
+  scale: 1.5;
+}
+
+/*########## Media Queries - Tablet ##########*/
+@media (min-width: 500px) {
+  .book-library__book-info {
+    grid-area: 1/2/2/3;
+    position: relative;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+/*########## Media Queries - Desktop ##########*/
+
+@media (min-width: 1023px) {
+  .book-library__book-info {
+    grid-area: 2/3/4/3;
+    position: static;
+    height: 100%;
+    width: 100%;
+    padding: 25px 20px;
+    box-shadow: variables.$shadow;
+    z-index: -100;
+  }
+}

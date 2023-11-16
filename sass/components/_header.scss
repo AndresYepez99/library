@@ -1,0 +1,72 @@
+@use '../root/variables';
+
+.book-library__search-bar,
+.book-library__user-btn {
+  display: none;
+}
+
+.book-library__header {
+  grid-area: 1/1/2/2;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 15px 15px 15px;
+  background-color: variables.$white-color-fav;
+  transition: 0.5s;
+}
+
+/*########## Media Queries - Tablet ##########*/
+
+@media (min-width: 500px) {
+  .book-library__header {
+    display: none;
+  }
+}
+
+/*########## Media Queries - Desktop ##########*/
+
+@media (min-width: 1023px) {
+  .book-library__logo,
+  .book-library__menu-btn,
+  .book-library__layout {
+    display: none;
+  }
+
+  .book-library__search-bar,
+  .book-library__user-btn {
+    display: block;
+  }
+
+  .book-library__header {
+    grid-area: 1/2/2/4;
+    display: flex;
+    padding: 25px 20px 15px 20px;
+    box-shadow: variables.$shadow;
+  }
+
+  .book-library__search-input {
+    padding: 10px 5px;
+    background-color: variables.$light-primary-color;
+    border: none;
+    outline: none;
+  }
+
+  .book-library__user-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 10px;
+  }
+
+  .book-library__user-img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+  }
+}
+
+.book-library__user-btn:hover i{
+  color: variables.$primary-color;
+}

@@ -1,0 +1,91 @@
+@use '../root/variables';
+
+.book-info__form {
+  position: absolute;
+  top: -1000px;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  height: 100vh;
+  width: 100vw;
+  padding: 25px 30px;
+  background-color: variables.$white-color-fav;
+  transition: 0.5s;
+}
+
+.form-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-input,
+.form-textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid variables.$dark-primary-color;
+  border-radius: 5px;
+  /* background-color: variables.$light-primary-color */
+}
+
+.form-checkbox {
+  scale: 1.5;
+}
+
+.book-info__btn-submit {
+  display: flex;
+  justify-content: center;
+  column-gap: 5px;
+  padding: 15px;
+  border-radius: variables.$boder-radius;
+  font-size: variables.$normal-font-size;
+  font-family: variables.$font-black;
+  color: variables.$white-color-fav;
+  background-color: variables.$primary-color;
+  transition: 0.2s;
+}
+
+.book-info__btn-submit:hover {
+  background-color: variables.$dark-primary-color;
+}
+
+/*########## Media Queries - Tablet ##########*/
+@media (min-width: 500px) {
+  .book-info__form {
+    grid-area: 1/2/2/3;
+    left: -1000px;
+    height: 100%;
+    width: 100%;
+    padding: 25px 40px;
+  }
+}
+
+/*########## Media Queries - Desktop ##########*/
+@media (min-width: 1023px) {
+  .book-library__form-container {
+    position: absolute;
+    top: -1500px;
+    left: 0;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    width: 100vw;
+    z-index: 1000;
+
+    background: rgba(0, 100, 255, 0);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+  }
+
+  .book-info__form {
+    grid-area: auto;
+    position: static;
+    width: 400px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  }
+}
