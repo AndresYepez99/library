@@ -7,3 +7,18 @@
   cursor: pointer;
 }
 
+.book-library__btn-add-book {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: grid;
+  place-items: center;
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  margin: 15px;
+  font-size: 20px;
+  color: var(--white-color-fav);
+  background-color: var(--primary-color);
+  z-index: 100;
+}

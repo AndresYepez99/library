@@ -25,7 +25,7 @@
           <strong>Book</strong>Base
         </span>
 
-        <button class="btn book-library__layout" type="button">
+        <button class="btn book-library__layout btn-layout" type="button">
           <i class="icon ri-function-line"></i>
         </button>
 
@@ -57,19 +57,23 @@
             <span><strong>Book</strong>Base</span>
           </span>
 
-          <button class="btn book-library__nav-btn-close">
+          <button class="btn book-library__nav-btn-close" type="button">
             <i class="icon book-library__nav-icon ri-arrow-left-s-line"></i>
           </button>
         </div>
 
         <div class="book-library__nav-container">
-          <button class="btn book-library__nav-btn">
-            <i class="icon book-library__nav-icon ri-book-3-line"></i>
-            <span class="book-library__nav-txt">My books</span>
+          <button class="btn book-library__nav-btn nav-btn-open-form">
+            <i class="icon book-library__nav-icon ri-add-line"></i>
+            <span class="book-library__nav-txt">Add book</span>
           </button>
-          <button class="btn book-library__nav-btn">
-            <i class="icon book-library__nav-icon ri-settings-3-line"></i>
-            <span class="book-library__nav-txt">Theme</span>
+          <button class="btn book-library__nav-btn nav-btn-layout btn-layout" type="button">
+            <i class="icon book-library__nav-icon ri-function-line"></i>
+            <span class="book-library__nav-txt">View</span>
+          </button>
+          <button class="btn book-library__nav-btn btn-theme">
+            <i class="icon book-library__nav-icon ri-moon-line"></i>
+            <span class="book-library__nav-txt">Dark Theme</span>
           </button>
           <button class="btn book-library__nav-btn">
             <i class="icon book-library__nav-icon ri-global-line"></i>
@@ -150,6 +154,9 @@
 
       <!-- Section "Book Information" -->
       <section class="book-library__book-info">
+        <button class="btn book-info__btn-close" type="button">
+          <i class="icon ri-arrow-left-s-line"></i>
+        </button>
         <img
           src="images/cover-1.png"
           alt="Book Cover"
@@ -158,7 +165,10 @@
         <h2 class="book-info__title">Book Title</h2>
         <h3 class="book-info__subtitle">Author Subtitle</h3>
         <p class="book-info__description">Detailed book description...</p>
-        <input class="book-info__btn-read" type="checkbox">Leido</input>
+        <div class="book-info__read-container">
+          <input class="book-info__btn-read" type="checkbox">
+          <span>Leido</span>
+        </div>
         <button class="btn book-info__btn-delete" type="button">
           <i class="ri-delete-bin-line"></i>
           Delete Book</button>
@@ -206,6 +216,10 @@
           </button>
         </form>
       </section>
+
+      <button class="btn book-library__btn-add-book">
+        <i class="ri-add-line"></i>
+      </button>
     </div>
 
 

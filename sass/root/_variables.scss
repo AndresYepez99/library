@@ -1,21 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
 
-/*########## Colors ##########*/
-/* Cambio de color favorito */
-$favorite-hue: 219; /* Púrpura 250 - Verde 142 - Azul 230 - Rosa 340 */
-
+/* ########## Colors ########## */
+/* Cambio de color favorito 219 */
 /* Modo de color HSL */
-$primary-color: hsl($favorite-hue, 100%, 50%);
-$dark-primary-color: hsl($favorite-hue, 100%, 13%);
-$light-primary-color: hsl($favorite-hue, 100%, 95%);
+:root {
+  --favorite-hue: 200; /* Púrpura 250 - Verde 142 - Azul 230 - Rosa 340 */
 
-/* Colores en base al color favorito */
-$white-color-fav: hsl($favorite-hue, 0%, 100%);
-$gray-color: hsl($favorite-hue, 8%, 96%);
-$text-color-light: hsl($favorite-hue, 1%, 27%);
-$text-color-dark: hsl($favorite-hue, 14%, 54%);
-$icon-color-light: hsl($favorite-hue, 13%, 47%);
-$icon-color-dark: hsl($favorite-hue, 11%, 56%);
+  --primary-color: hsl(var(--favorite-hue), 100%, 50%);
+  --dark-primary-color: hsl(var(--favorite-hue), 100%, 13%);
+  --light-primary-color: hsl(var(--favorite-hue), 100%, 95%);
+
+  /* Colores en base al color favorito */
+  --white-color-fav: hsl(var(--favorite-hue), 0%, 100%);
+  --gray-color: hsl(var(--favorite-hue), 8%, 96%);
+  --text-color-light: hsl(var(--favorite-hue), 1%, 27%);
+  --text-color-dark: hsl(var(--favorite-hue), 14%, 54%);
+  --icon-color-light: hsl(var(--favorite-hue), 13%, 47%);
+  --icon-color-dark: hsl(var(--favorite-hue), 11%, 56%);
+
+  --border-radius: 8px;
+}
 
 /*########## Font and typography ##########*/
 $body-font: 'Poppins', sans-serif;
@@ -27,7 +31,6 @@ $h3-font-size: 1.125rem;
 $normal-font-size: 0.938rem;
 $small-font-size: 0.813rem;
 $smaller-font-size: 0.75rem;
-
 
 /*########## Font weight ##########*/
 $font-200: 200;
@@ -43,26 +46,38 @@ $font-black: 900;
 padding-book-info */
 
 /*########## Padding ##########*/
-$boder-radius: 8px; 
+$boder-radius: 8px;
 /*########## Shadows ##########*/
 $shadow: 0px 0px 10px rgba(3, 3, 3, 0.15);
-
 
 /*########## z index ##########*/
 $z-fixed: 100;
 $z-modal: 1000;
 
-
 /* Font size for large devices */
-@media screen and (min-width: 968px) {
-    $h1-font-size: 1.5rem;
-    $h2-font-size: 1.25rem;
-    $h3-font-size: 1.125rem;
-    $normal-font-size: 0.938rem;
-    $small-font-size: 0.813rem;
-    $smaller-font-size: 0.75rem;
+@media screen and (max-width: 968px) {
+  $h1-font-size: 1.5rem;
+  $h2-font-size: 1.25rem;
+  $h3-font-size: 1.125rem;
+  $normal-font-size: 0.938rem;
+  $small-font-size: 0.813rem;
+  $smaller-font-size: 0.75rem;
 }
 
 /*########## Variables Dark theme ##########*/
 
 /*########## Button Dark/Light ##########*/
+
+.dark {
+  --favorite-hue: 200;
+  --primary-color: hsl(var(--favorite-hue), 100%, 50%);
+  --dark-primary-color: hsl(var(--favorite-hue), 100%, 30%);
+  --light-primary-color: hsl(var(--favorite-hue), 100%, 7%);
+  --white-color-fav: hsl(var(--favorite-hue), 0%, 7%);
+  --card-color: hsl(var(--favorite-hue), 0%, 12%);
+  --gray-color: hsl(var(--favorite-hue), 8%, 96%);
+  --text-color-light: hsl(var(--favorite-hue), 1%, 70%);
+  --text-color-dark: hsl(var(--favorite-hue), 14%, 54%);
+  --icon-color-light: hsl(var(--favorite-hue), 13%, 70%);
+  --icon-color-dark: hsl(var(--favorite-hue), 11%, 76%);
+}

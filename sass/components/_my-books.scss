@@ -8,7 +8,7 @@
   width: 100%;
   height: 100%;
   padding: 15px;
-  background-color: variables.$white-color-fav;
+  background-color: var(--white-color-fav);
   overflow-y: scroll;
   scroll-behavior: smooth;
 }
@@ -19,7 +19,7 @@
 }
 
 .book-library__my-books::-webkit-scrollbar-thumb {
-  background-color: #0059ff; /* Color del 'pulgón' de la barra de desplazamiento */
+  background-color: var(--primary-color); /* Color del 'pulgón' de la barra de desplazamiento */
   border-radius: 6px; /* Bordes redondeados del 'pulgón' */
 }
 
@@ -40,7 +40,7 @@
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: repeat(3, 1fr);
-  grid-row-gap: 15px;
+  gap: 15px;
 }
 
 /*########## Media Queries - Tablet ##########*/
@@ -70,4 +70,10 @@
     gap: 15px;
   }
 }
+
+/*########## Reusables ##########*/
+.grid-view {
+  grid-template-columns: repeat(2, 1fr);
+}
+
 

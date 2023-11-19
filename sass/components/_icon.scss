@@ -2,10 +2,10 @@
 
 .icon {
   font-size: 20px;
-  color: variables.$dark-primary-color;
-  transition: .2s;
+  color: var(--dark-primary-color);
+  transition: 0.2s;
 }
 
 .icon:hover {
-  color: variables.$primary-color;
+  color: var(--primary-color);
 }

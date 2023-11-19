@@ -13,8 +13,12 @@
   justify-content: space-between;
   align-items: center;
   padding: 20px 15px 15px 15px;
-  background-color: variables.$white-color-fav;
+  background-color: var(--white-color-fav);
   transition: 0.5s;
+}
+
+.book-library__logo i {
+  color: var(--primary-color);
 }
 
 /*########## Media Queries - Tablet ##########*/
@@ -43,12 +47,12 @@
     grid-area: 1/2/2/4;
     display: flex;
     padding: 25px 20px 15px 20px;
-    box-shadow: variables.$shadow;
+    box-shadow: var(--shadow);
   }
 
   .book-library__search-input {
     padding: 10px 5px;
-    background-color: variables.$light-primary-color;
+    background-color: var(--light-primary-color);
     border: none;
     outline: none;
   }
@@ -67,6 +71,11 @@
   }
 }
 
-.book-library__user-btn:hover i{
-  color: variables.$primary-color;
+.book-library__user-btn:hover i {
+  color: var(--primary-color);
+}
+
+/*########## Reusables ##########*/
+.btn-layout-is-active > i {
+  color: var(--primary-color);
 }

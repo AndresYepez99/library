@@ -13,16 +13,25 @@ html {
 body {
   font-family: variables.$body-font;
   font-size: variables.$normal-font-size;
-  background-color: variables.$light-primary-color;
-  color: variables.$text-color-dark;
+  background-color: var(--light-primary-color);
+  color: var(--text-color-dark);
 }
 
 h1,
 h2,
 h3,
 h4 {
-  color: variables.$text-color-dark;
+  color: var(--text-color-dark);
   font-weight: variables.$font-semi-bold;
+}
+
+h2 {
+  font-size: clamp(1rem, 0.9299999999999999rem + 0.4vw, 1.25rem);
+}
+
+h3 {
+  font-size: clamp(0.875rem, 0.8049999999999999rem + 0.4vw, 1.125rem);
+  font-weight: variables.$font-normal;
 }
 
 ul {

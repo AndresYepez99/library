@@ -1,21 +1,9 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap"); /* @use './variables'; */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
-/*########## Colors ##########*/
-/* Cambio de color favorito */
-/* Púrpura 250 - Verde 142 - Azul 230 - Rosa 340 */
+/* ########## Colors ########## */
+/* Cambio de color favorito 219 */
 /* Modo de color HSL */
-/* Colores en base al color favorito */
-/*########## Font and typography ##########*/
-/* .5rem # 8px, 1rem # 16px, 1.5rem # 24px ... */
-/*########## Font weight ##########*/
-/*########## Padding ##########*/
-/* padding-navbar
-padding-book-info */
-/*########## Padding ##########*/
-/*########## Shadows ##########*/
-/*########## z index ##########*/
-/* Font size for large devices */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
@@ -25,11 +13,24 @@ padding-book-info */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
-/*########## Colors ##########*/
-/* Cambio de color favorito */
-/* Púrpura 250 - Verde 142 - Azul 230 - Rosa 340 */
+/* ########## Colors ########## */
+/* Cambio de color favorito 219 */
 /* Modo de color HSL */
-/* Colores en base al color favorito */
+:root {
+  --favorite-hue: 200; /* Púrpura 250 - Verde 142 - Azul 230 - Rosa 340 */
+  --primary-color: hsl(var(--favorite-hue), 100%, 50%);
+  --dark-primary-color: hsl(var(--favorite-hue), 100%, 13%);
+  --light-primary-color: hsl(var(--favorite-hue), 100%, 95%);
+  /* Colores en base al color favorito */
+  --white-color-fav: hsl(var(--favorite-hue), 0%, 100%);
+  --gray-color: hsl(var(--favorite-hue), 8%, 96%);
+  --text-color-light: hsl(var(--favorite-hue), 1%, 27%);
+  --text-color-dark: hsl(var(--favorite-hue), 14%, 54%);
+  --icon-color-light: hsl(var(--favorite-hue), 13%, 47%);
+  --icon-color-dark: hsl(var(--favorite-hue), 11%, 56%);
+  --border-radius: 8px;
+}
+
 /*########## Font and typography ##########*/
 /* .5rem # 8px, 1rem # 16px, 1.5rem # 24px ... */
 /*########## Font weight ##########*/
@@ -42,6 +43,20 @@ padding-book-info */
 /* Font size for large devices */
 /*########## Variables Dark theme ##########*/
 /*########## Button Dark/Light ##########*/
+.dark {
+  --favorite-hue: 200;
+  --primary-color: hsl(var(--favorite-hue), 100%, 50%);
+  --dark-primary-color: hsl(var(--favorite-hue), 100%, 30%);
+  --light-primary-color: hsl(var(--favorite-hue), 100%, 7%);
+  --white-color-fav: hsl(var(--favorite-hue), 0%, 7%);
+  --card-color: hsl(var(--favorite-hue), 0%, 12%);
+  --gray-color: hsl(var(--favorite-hue), 8%, 96%);
+  --text-color-light: hsl(var(--favorite-hue), 1%, 70%);
+  --text-color-dark: hsl(var(--favorite-hue), 14%, 54%);
+  --icon-color-light: hsl(var(--favorite-hue), 13%, 70%);
+  --icon-color-dark: hsl(var(--favorite-hue), 11%, 76%);
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -55,16 +70,25 @@ html {
 body {
   font-family: "Poppins", sans-serif;
   font-size: 0.938rem;
-  background-color: hsl(219, 100%, 95%);
-  color: hsl(219, 14%, 54%);
+  background-color: var(--light-primary-color);
+  color: var(--text-color-dark);
 }
 
 h1,
 h2,
 h3,
 h4 {
-  color: hsl(219, 14%, 54%);
+  color: var(--text-color-dark);
   font-weight: 600;
+}
+
+h2 {
+  font-size: clamp(1rem, 0.93rem + 0.4vw, 1.25rem);
+}
+
+h3 {
+  font-size: clamp(0.875rem, 0.805rem + 0.4vw, 1.125rem);
+  font-weight: 400;
 }
 
 ul {
@@ -82,18 +106,21 @@ img {
   object-fit: cover;
 }
 
-/*########## Variables Dark theme ##########*/
-/*########## Button Dark/Light ##########*/
-.logo {
-  font-size: 20px;
-  color: hsl(219, 100%, 13%);
+:root {
+  --favorite-hue: 200; /* Púrpura 250 - Verde 142 - Azul 230 - Rosa 340 */
+  --primary-color: hsl(var(--favorite-hue), 100%, 50%);
+  --dark-primary-color: hsl(var(--favorite-hue), 100%, 13%);
+  --light-primary-color: hsl(var(--favorite-hue), 100%, 95%);
+  /* Colores en base al color favorito */
+  --white-color-fav: hsl(var(--favorite-hue), 0%, 100%);
+  --gray-color: hsl(var(--favorite-hue), 8%, 96%);
+  --text-color-light: hsl(var(--favorite-hue), 1%, 27%);
+  --text-color-dark: hsl(var(--favorite-hue), 14%, 54%);
+  --icon-color-light: hsl(var(--favorite-hue), 13%, 47%);
+  --icon-color-dark: hsl(var(--favorite-hue), 11%, 56%);
+  --border-radius: 8px;
 }
 
-/*########## Colors ##########*/
-/* Cambio de color favorito */
-/* Púrpura 250 - Verde 142 - Azul 230 - Rosa 340 */
-/* Modo de color HSL */
-/* Colores en base al color favorito */
 /*########## Font and typography ##########*/
 /* .5rem # 8px, 1rem # 16px, 1.5rem # 24px ... */
 /*########## Font weight ##########*/
@@ -106,6 +133,69 @@ padding-book-info */
 /* Font size for large devices */
 /*########## Variables Dark theme ##########*/
 /*########## Button Dark/Light ##########*/
+.dark {
+  --favorite-hue: 200;
+  --primary-color: hsl(var(--favorite-hue), 100%, 50%);
+  --dark-primary-color: hsl(var(--favorite-hue), 100%, 30%);
+  --light-primary-color: hsl(var(--favorite-hue), 100%, 7%);
+  --white-color-fav: hsl(var(--favorite-hue), 0%, 7%);
+  --card-color: hsl(var(--favorite-hue), 0%, 12%);
+  --gray-color: hsl(var(--favorite-hue), 8%, 96%);
+  --text-color-light: hsl(var(--favorite-hue), 1%, 70%);
+  --text-color-dark: hsl(var(--favorite-hue), 14%, 54%);
+  --icon-color-light: hsl(var(--favorite-hue), 13%, 70%);
+  --icon-color-dark: hsl(var(--favorite-hue), 11%, 76%);
+}
+
+.logo {
+  font-size: 20px;
+  color: var(--dark-primary-color);
+}
+
+/* ########## Colors ########## */
+/* Cambio de color favorito 219 */
+/* Modo de color HSL */
+:root {
+  --favorite-hue: 200; /* Púrpura 250 - Verde 142 - Azul 230 - Rosa 340 */
+  --primary-color: hsl(var(--favorite-hue), 100%, 50%);
+  --dark-primary-color: hsl(var(--favorite-hue), 100%, 13%);
+  --light-primary-color: hsl(var(--favorite-hue), 100%, 95%);
+  /* Colores en base al color favorito */
+  --white-color-fav: hsl(var(--favorite-hue), 0%, 100%);
+  --gray-color: hsl(var(--favorite-hue), 8%, 96%);
+  --text-color-light: hsl(var(--favorite-hue), 1%, 27%);
+  --text-color-dark: hsl(var(--favorite-hue), 14%, 54%);
+  --icon-color-light: hsl(var(--favorite-hue), 13%, 47%);
+  --icon-color-dark: hsl(var(--favorite-hue), 11%, 56%);
+  --border-radius: 8px;
+}
+
+/*########## Font and typography ##########*/
+/* .5rem # 8px, 1rem # 16px, 1.5rem # 24px ... */
+/*########## Font weight ##########*/
+/*########## Padding ##########*/
+/* padding-navbar
+padding-book-info */
+/*########## Padding ##########*/
+/*########## Shadows ##########*/
+/*########## z index ##########*/
+/* Font size for large devices */
+/*########## Variables Dark theme ##########*/
+/*########## Button Dark/Light ##########*/
+.dark {
+  --favorite-hue: 200;
+  --primary-color: hsl(var(--favorite-hue), 100%, 50%);
+  --dark-primary-color: hsl(var(--favorite-hue), 100%, 30%);
+  --light-primary-color: hsl(var(--favorite-hue), 100%, 7%);
+  --white-color-fav: hsl(var(--favorite-hue), 0%, 7%);
+  --card-color: hsl(var(--favorite-hue), 0%, 12%);
+  --gray-color: hsl(var(--favorite-hue), 8%, 96%);
+  --text-color-light: hsl(var(--favorite-hue), 1%, 70%);
+  --text-color-dark: hsl(var(--favorite-hue), 14%, 54%);
+  --icon-color-light: hsl(var(--favorite-hue), 13%, 70%);
+  --icon-color-dark: hsl(var(--favorite-hue), 11%, 76%);
+}
+
 .btn {
   border: none;
   outline: none;
@@ -113,11 +203,40 @@ padding-book-info */
   cursor: pointer;
 }
 
-/*########## Colors ##########*/
-/* Cambio de color favorito */
-/* Púrpura 250 - Verde 142 - Azul 230 - Rosa 340 */
+.book-library__btn-add-book {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: grid;
+  place-items: center;
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  margin: 15px;
+  font-size: 20px;
+  color: var(--white-color-fav);
+  background-color: var(--primary-color);
+  z-index: 100;
+}
+
+/* ########## Colors ########## */
+/* Cambio de color favorito 219 */
 /* Modo de color HSL */
-/* Colores en base al color favorito */
+:root {
+  --favorite-hue: 200; /* Púrpura 250 - Verde 142 - Azul 230 - Rosa 340 */
+  --primary-color: hsl(var(--favorite-hue), 100%, 50%);
+  --dark-primary-color: hsl(var(--favorite-hue), 100%, 13%);
+  --light-primary-color: hsl(var(--favorite-hue), 100%, 95%);
+  /* Colores en base al color favorito */
+  --white-color-fav: hsl(var(--favorite-hue), 0%, 100%);
+  --gray-color: hsl(var(--favorite-hue), 8%, 96%);
+  --text-color-light: hsl(var(--favorite-hue), 1%, 27%);
+  --text-color-dark: hsl(var(--favorite-hue), 14%, 54%);
+  --icon-color-light: hsl(var(--favorite-hue), 13%, 47%);
+  --icon-color-dark: hsl(var(--favorite-hue), 11%, 56%);
+  --border-radius: 8px;
+}
+
 /*########## Font and typography ##########*/
 /* .5rem # 8px, 1rem # 16px, 1.5rem # 24px ... */
 /*########## Font weight ##########*/
@@ -130,16 +249,43 @@ padding-book-info */
 /* Font size for large devices */
 /*########## Variables Dark theme ##########*/
 /*########## Button Dark/Light ##########*/
+.dark {
+  --favorite-hue: 200;
+  --primary-color: hsl(var(--favorite-hue), 100%, 50%);
+  --dark-primary-color: hsl(var(--favorite-hue), 100%, 30%);
+  --light-primary-color: hsl(var(--favorite-hue), 100%, 7%);
+  --white-color-fav: hsl(var(--favorite-hue), 0%, 7%);
+  --card-color: hsl(var(--favorite-hue), 0%, 12%);
+  --gray-color: hsl(var(--favorite-hue), 8%, 96%);
+  --text-color-light: hsl(var(--favorite-hue), 1%, 70%);
+  --text-color-dark: hsl(var(--favorite-hue), 14%, 54%);
+  --icon-color-light: hsl(var(--favorite-hue), 13%, 70%);
+  --icon-color-dark: hsl(var(--favorite-hue), 11%, 76%);
+}
+
 .book-card {
+  position: relative;
   width: 100%;
   height: auto;
   border-radius: 8px;
   box-shadow: 0px 0px 10px rgba(3, 3, 3, 0.15);
+  background-color: var(--card-color);
+  cursor: pointer;
+}
+
+.book-card::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: transparent;
 }
 
 .book-card__cover {
   width: 100%;
-  height: 250px;
+  height: clamp(9.375rem, 7.625rem + 10vw, 15.625rem);
   border-radius: 8px 8px 0px 0px;
 }
 
@@ -147,11 +293,24 @@ padding-book-info */
   padding: 10px;
 }
 
-/*########## Colors ##########*/
-/* Cambio de color favorito */
-/* Púrpura 250 - Verde 142 - Azul 230 - Rosa 340 */
+/* ########## Colors ########## */
+/* Cambio de color favorito 219 */
 /* Modo de color HSL */
-/* Colores en base al color favorito */
+:root {
+  --favorite-hue: 200; /* Púrpura 250 - Verde 142 - Azul 230 - Rosa 340 */
+  --primary-color: hsl(var(--favorite-hue), 100%, 50%);
+  --dark-primary-color: hsl(var(--favorite-hue), 100%, 13%);
+  --light-primary-color: hsl(var(--favorite-hue), 100%, 95%);
+  /* Colores en base al color favorito */
+  --white-color-fav: hsl(var(--favorite-hue), 0%, 100%);
+  --gray-color: hsl(var(--favorite-hue), 8%, 96%);
+  --text-color-light: hsl(var(--favorite-hue), 1%, 27%);
+  --text-color-dark: hsl(var(--favorite-hue), 14%, 54%);
+  --icon-color-light: hsl(var(--favorite-hue), 13%, 47%);
+  --icon-color-dark: hsl(var(--favorite-hue), 11%, 56%);
+  --border-radius: 8px;
+}
+
 /*########## Font and typography ##########*/
 /* .5rem # 8px, 1rem # 16px, 1.5rem # 24px ... */
 /*########## Font weight ##########*/
@@ -164,21 +323,48 @@ padding-book-info */
 /* Font size for large devices */
 /*########## Variables Dark theme ##########*/
 /*########## Button Dark/Light ##########*/
+.dark {
+  --favorite-hue: 200;
+  --primary-color: hsl(var(--favorite-hue), 100%, 50%);
+  --dark-primary-color: hsl(var(--favorite-hue), 100%, 30%);
+  --light-primary-color: hsl(var(--favorite-hue), 100%, 7%);
+  --white-color-fav: hsl(var(--favorite-hue), 0%, 7%);
+  --card-color: hsl(var(--favorite-hue), 0%, 12%);
+  --gray-color: hsl(var(--favorite-hue), 8%, 96%);
+  --text-color-light: hsl(var(--favorite-hue), 1%, 70%);
+  --text-color-dark: hsl(var(--favorite-hue), 14%, 54%);
+  --icon-color-light: hsl(var(--favorite-hue), 13%, 70%);
+  --icon-color-dark: hsl(var(--favorite-hue), 11%, 76%);
+}
+
 .icon {
   font-size: 20px;
-  color: hsl(219, 100%, 13%);
+  color: var(--dark-primary-color);
   transition: 0.2s;
 }
 
 .icon:hover {
-  color: hsl(219, 100%, 50%);
+  color: var(--primary-color);
 }
 
-/*########## Colors ##########*/
-/* Cambio de color favorito */
-/* Púrpura 250 - Verde 142 - Azul 230 - Rosa 340 */
+/* ########## Colors ########## */
+/* Cambio de color favorito 219 */
 /* Modo de color HSL */
-/* Colores en base al color favorito */
+:root {
+  --favorite-hue: 200; /* Púrpura 250 - Verde 142 - Azul 230 - Rosa 340 */
+  --primary-color: hsl(var(--favorite-hue), 100%, 50%);
+  --dark-primary-color: hsl(var(--favorite-hue), 100%, 13%);
+  --light-primary-color: hsl(var(--favorite-hue), 100%, 95%);
+  /* Colores en base al color favorito */
+  --white-color-fav: hsl(var(--favorite-hue), 0%, 100%);
+  --gray-color: hsl(var(--favorite-hue), 8%, 96%);
+  --text-color-light: hsl(var(--favorite-hue), 1%, 27%);
+  --text-color-dark: hsl(var(--favorite-hue), 14%, 54%);
+  --icon-color-light: hsl(var(--favorite-hue), 13%, 47%);
+  --icon-color-dark: hsl(var(--favorite-hue), 11%, 56%);
+  --border-radius: 8px;
+}
+
 /*########## Font and typography ##########*/
 /* .5rem # 8px, 1rem # 16px, 1.5rem # 24px ... */
 /*########## Font weight ##########*/
@@ -191,6 +377,20 @@ padding-book-info */
 /* Font size for large devices */
 /*########## Variables Dark theme ##########*/
 /*########## Button Dark/Light ##########*/
+.dark {
+  --favorite-hue: 200;
+  --primary-color: hsl(var(--favorite-hue), 100%, 50%);
+  --dark-primary-color: hsl(var(--favorite-hue), 100%, 30%);
+  --light-primary-color: hsl(var(--favorite-hue), 100%, 7%);
+  --white-color-fav: hsl(var(--favorite-hue), 0%, 7%);
+  --card-color: hsl(var(--favorite-hue), 0%, 12%);
+  --gray-color: hsl(var(--favorite-hue), 8%, 96%);
+  --text-color-light: hsl(var(--favorite-hue), 1%, 70%);
+  --text-color-dark: hsl(var(--favorite-hue), 14%, 54%);
+  --icon-color-light: hsl(var(--favorite-hue), 13%, 70%);
+  --icon-color-dark: hsl(var(--favorite-hue), 11%, 76%);
+}
+
 .book-library {
   position: relative;
   display: grid;
@@ -218,11 +418,24 @@ padding-book-info */
     grid-template-rows: auto 1fr;
   }
 }
-/*########## Colors ##########*/
-/* Cambio de color favorito */
-/* Púrpura 250 - Verde 142 - Azul 230 - Rosa 340 */
+/* ########## Colors ########## */
+/* Cambio de color favorito 219 */
 /* Modo de color HSL */
-/* Colores en base al color favorito */
+:root {
+  --favorite-hue: 200; /* Púrpura 250 - Verde 142 - Azul 230 - Rosa 340 */
+  --primary-color: hsl(var(--favorite-hue), 100%, 50%);
+  --dark-primary-color: hsl(var(--favorite-hue), 100%, 13%);
+  --light-primary-color: hsl(var(--favorite-hue), 100%, 95%);
+  /* Colores en base al color favorito */
+  --white-color-fav: hsl(var(--favorite-hue), 0%, 100%);
+  --gray-color: hsl(var(--favorite-hue), 8%, 96%);
+  --text-color-light: hsl(var(--favorite-hue), 1%, 27%);
+  --text-color-dark: hsl(var(--favorite-hue), 14%, 54%);
+  --icon-color-light: hsl(var(--favorite-hue), 13%, 47%);
+  --icon-color-dark: hsl(var(--favorite-hue), 11%, 56%);
+  --border-radius: 8px;
+}
+
 /*########## Font and typography ##########*/
 /* .5rem # 8px, 1rem # 16px, 1.5rem # 24px ... */
 /*########## Font weight ##########*/
@@ -235,6 +448,20 @@ padding-book-info */
 /* Font size for large devices */
 /*########## Variables Dark theme ##########*/
 /*########## Button Dark/Light ##########*/
+.dark {
+  --favorite-hue: 200;
+  --primary-color: hsl(var(--favorite-hue), 100%, 50%);
+  --dark-primary-color: hsl(var(--favorite-hue), 100%, 30%);
+  --light-primary-color: hsl(var(--favorite-hue), 100%, 7%);
+  --white-color-fav: hsl(var(--favorite-hue), 0%, 7%);
+  --card-color: hsl(var(--favorite-hue), 0%, 12%);
+  --gray-color: hsl(var(--favorite-hue), 8%, 96%);
+  --text-color-light: hsl(var(--favorite-hue), 1%, 70%);
+  --text-color-dark: hsl(var(--favorite-hue), 14%, 54%);
+  --icon-color-light: hsl(var(--favorite-hue), 13%, 70%);
+  --icon-color-dark: hsl(var(--favorite-hue), 11%, 76%);
+}
+
 .book-library__search-bar,
 .book-library__user-btn {
   display: none;
@@ -248,8 +475,12 @@ padding-book-info */
   justify-content: space-between;
   align-items: center;
   padding: 20px 15px 15px 15px;
-  background-color: hsl(219, 0%, 100%);
+  background-color: var(--white-color-fav);
   transition: 0.5s;
+}
+
+.book-library__logo i {
+  color: var(--primary-color);
 }
 
 /*########## Media Queries - Tablet ##########*/
@@ -273,11 +504,11 @@ padding-book-info */
     grid-area: 1/2/2/4;
     display: flex;
     padding: 25px 20px 15px 20px;
-    box-shadow: 0px 0px 10px rgba(3, 3, 3, 0.15);
+    box-shadow: var(--shadow);
   }
   .book-library__search-input {
     padding: 10px 5px;
-    background-color: hsl(219, 100%, 95%);
+    background-color: var(--light-primary-color);
     border: none;
     outline: none;
   }
@@ -294,14 +525,32 @@ padding-book-info */
   }
 }
 .book-library__user-btn:hover i {
-  color: hsl(219, 100%, 50%);
+  color: var(--primary-color);
 }
 
-/*########## Colors ##########*/
-/* Cambio de color favorito */
-/* Púrpura 250 - Verde 142 - Azul 230 - Rosa 340 */
+/*########## Reusables ##########*/
+.btn-layout-is-active > i {
+  color: var(--primary-color);
+}
+
+/* ########## Colors ########## */
+/* Cambio de color favorito 219 */
 /* Modo de color HSL */
-/* Colores en base al color favorito */
+:root {
+  --favorite-hue: 200; /* Púrpura 250 - Verde 142 - Azul 230 - Rosa 340 */
+  --primary-color: hsl(var(--favorite-hue), 100%, 50%);
+  --dark-primary-color: hsl(var(--favorite-hue), 100%, 13%);
+  --light-primary-color: hsl(var(--favorite-hue), 100%, 95%);
+  /* Colores en base al color favorito */
+  --white-color-fav: hsl(var(--favorite-hue), 0%, 100%);
+  --gray-color: hsl(var(--favorite-hue), 8%, 96%);
+  --text-color-light: hsl(var(--favorite-hue), 1%, 27%);
+  --text-color-dark: hsl(var(--favorite-hue), 14%, 54%);
+  --icon-color-light: hsl(var(--favorite-hue), 13%, 47%);
+  --icon-color-dark: hsl(var(--favorite-hue), 11%, 56%);
+  --border-radius: 8px;
+}
+
 /*########## Font and typography ##########*/
 /* .5rem # 8px, 1rem # 16px, 1.5rem # 24px ... */
 /*########## Font weight ##########*/
@@ -314,6 +563,20 @@ padding-book-info */
 /* Font size for large devices */
 /*########## Variables Dark theme ##########*/
 /*########## Button Dark/Light ##########*/
+.dark {
+  --favorite-hue: 200;
+  --primary-color: hsl(var(--favorite-hue), 100%, 50%);
+  --dark-primary-color: hsl(var(--favorite-hue), 100%, 30%);
+  --light-primary-color: hsl(var(--favorite-hue), 100%, 7%);
+  --white-color-fav: hsl(var(--favorite-hue), 0%, 7%);
+  --card-color: hsl(var(--favorite-hue), 0%, 12%);
+  --gray-color: hsl(var(--favorite-hue), 8%, 96%);
+  --text-color-light: hsl(var(--favorite-hue), 1%, 70%);
+  --text-color-dark: hsl(var(--favorite-hue), 14%, 54%);
+  --icon-color-light: hsl(var(--favorite-hue), 13%, 70%);
+  --icon-color-dark: hsl(var(--favorite-hue), 11%, 76%);
+}
+
 .book-library__navbar {
   position: absolute;
   top: 0;
@@ -323,9 +586,9 @@ padding-book-info */
   flex-direction: column;
   row-gap: 30px;
   height: 100vh;
-  width: 80vw;
+  width: 81vw;
   padding: 30px;
-  background-color: hsl(219, 0%, 100%);
+  background-color: var(--white-color-fav);
   z-index: 100;
   transition: 0.2s;
 }
@@ -340,7 +603,7 @@ padding-book-info */
 .book-library__nav-logo i {
   padding: 5px;
   font-size: 22px;
-  color: hsl(219, 100%, 50%);
+  color: var(--primary-color);
 }
 
 .book-library__nav-container {
@@ -354,8 +617,8 @@ padding-book-info */
   display: flex;
   align-items: center;
   column-gap: 15px;
-  font-size: 18px;
-  color: hsl(219, 1%, 27%);
+  font-size: clamp(1rem, 0.93rem + 0.4vw, 1.25rem);
+  color: var(--text-color-light);
   transition: 0.3s;
 }
 
@@ -363,25 +626,35 @@ padding-book-info */
   padding: 5px;
   border-radius: 8px;
   font-size: 20px;
-  color: hsl(219, 11%, 56%);
+  color: var(--icon-color-dark);
   transition: 0.3s;
 }
 
 .book-library__nav-btn:hover {
-  color: hsl(219, 100%, 50%);
+  color: var(--primary-color);
 }
 
 .book-library__nav-btn:hover .book-library__nav-icon {
-  color: hsl(219, 0%, 100%);
-  background-color: hsl(219, 100%, 50%);
+  color: var(--white-color-fav);
+  background-color: var(--primary-color);
+}
+
+.nav-btn-open-form,
+.nav-btn-layout {
+  display: none;
 }
 
 /*########## Media Queries - Tablet ##########*/
 @media (min-width: 500px) {
   .book-library__nav-logo span,
   .book-library__nav-btn-close,
-  .book-library__nav-txt {
+  .book-library__nav-txt,
+  .book-library__btn-add-book {
     display: none;
+  }
+  .nav-btn-open-form,
+  .nav-btn-layout {
+    display: flex;
   }
   .book-library__navbar {
     grid-area: 1/1/2/2;
@@ -391,8 +664,8 @@ padding-book-info */
     row-gap: 30px;
     width: 54px;
     padding: 0;
-    padding-top: 20px;
-    box-shadow: 0px 0px 10px rgba(3, 3, 3, 0.15);
+    padding-top: 25px;
+    box-shadow: var(--shadow);
   }
   .book-library__logo-container {
     justify-content: center;
@@ -423,11 +696,28 @@ padding-book-info */
   }
 }
 /*########## Reusables ##########*/
-/*########## Colors ##########*/
-/* Cambio de color favorito */
-/* Púrpura 250 - Verde 142 - Azul 230 - Rosa 340 */
+.open-navbar {
+  left: 0;
+}
+
+/* ########## Colors ########## */
+/* Cambio de color favorito 219 */
 /* Modo de color HSL */
-/* Colores en base al color favorito */
+:root {
+  --favorite-hue: 200; /* Púrpura 250 - Verde 142 - Azul 230 - Rosa 340 */
+  --primary-color: hsl(var(--favorite-hue), 100%, 50%);
+  --dark-primary-color: hsl(var(--favorite-hue), 100%, 13%);
+  --light-primary-color: hsl(var(--favorite-hue), 100%, 95%);
+  /* Colores en base al color favorito */
+  --white-color-fav: hsl(var(--favorite-hue), 0%, 100%);
+  --gray-color: hsl(var(--favorite-hue), 8%, 96%);
+  --text-color-light: hsl(var(--favorite-hue), 1%, 27%);
+  --text-color-dark: hsl(var(--favorite-hue), 14%, 54%);
+  --icon-color-light: hsl(var(--favorite-hue), 13%, 47%);
+  --icon-color-dark: hsl(var(--favorite-hue), 11%, 56%);
+  --border-radius: 8px;
+}
+
 /*########## Font and typography ##########*/
 /* .5rem # 8px, 1rem # 16px, 1.5rem # 24px ... */
 /*########## Font weight ##########*/
@@ -440,6 +730,20 @@ padding-book-info */
 /* Font size for large devices */
 /*########## Variables Dark theme ##########*/
 /*########## Button Dark/Light ##########*/
+.dark {
+  --favorite-hue: 200;
+  --primary-color: hsl(var(--favorite-hue), 100%, 50%);
+  --dark-primary-color: hsl(var(--favorite-hue), 100%, 30%);
+  --light-primary-color: hsl(var(--favorite-hue), 100%, 7%);
+  --white-color-fav: hsl(var(--favorite-hue), 0%, 7%);
+  --card-color: hsl(var(--favorite-hue), 0%, 12%);
+  --gray-color: hsl(var(--favorite-hue), 8%, 96%);
+  --text-color-light: hsl(var(--favorite-hue), 1%, 70%);
+  --text-color-dark: hsl(var(--favorite-hue), 14%, 54%);
+  --icon-color-light: hsl(var(--favorite-hue), 13%, 70%);
+  --icon-color-dark: hsl(var(--favorite-hue), 11%, 76%);
+}
+
 .book-library__my-books {
   grid-area: 2/1/3/2;
   display: flex;
@@ -448,7 +752,7 @@ padding-book-info */
   width: 100%;
   height: 100%;
   padding: 15px;
-  background-color: hsl(219, 0%, 100%);
+  background-color: var(--white-color-fav);
   overflow-y: scroll;
   scroll-behavior: smooth;
 }
@@ -459,7 +763,7 @@ padding-book-info */
 }
 
 .book-library__my-books::-webkit-scrollbar-thumb {
-  background-color: #0059ff; /* Color del 'pulgón' de la barra de desplazamiento */
+  background-color: var(--primary-color); /* Color del 'pulgón' de la barra de desplazamiento */
   border-radius: 6px; /* Bordes redondeados del 'pulgón' */
 }
 
@@ -479,7 +783,7 @@ padding-book-info */
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: repeat(3, 1fr);
-  grid-row-gap: 15px;
+  gap: 15px;
 }
 
 /*########## Media Queries - Tablet ##########*/
@@ -505,11 +809,29 @@ padding-book-info */
     gap: 15px;
   }
 }
-/*########## Colors ##########*/
-/* Cambio de color favorito */
-/* Púrpura 250 - Verde 142 - Azul 230 - Rosa 340 */
+/*########## Reusables ##########*/
+.grid-view {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* ########## Colors ########## */
+/* Cambio de color favorito 219 */
 /* Modo de color HSL */
-/* Colores en base al color favorito */
+:root {
+  --favorite-hue: 200; /* Púrpura 250 - Verde 142 - Azul 230 - Rosa 340 */
+  --primary-color: hsl(var(--favorite-hue), 100%, 50%);
+  --dark-primary-color: hsl(var(--favorite-hue), 100%, 13%);
+  --light-primary-color: hsl(var(--favorite-hue), 100%, 95%);
+  /* Colores en base al color favorito */
+  --white-color-fav: hsl(var(--favorite-hue), 0%, 100%);
+  --gray-color: hsl(var(--favorite-hue), 8%, 96%);
+  --text-color-light: hsl(var(--favorite-hue), 1%, 27%);
+  --text-color-dark: hsl(var(--favorite-hue), 14%, 54%);
+  --icon-color-light: hsl(var(--favorite-hue), 13%, 47%);
+  --icon-color-dark: hsl(var(--favorite-hue), 11%, 56%);
+  --border-radius: 8px;
+}
+
 /*########## Font and typography ##########*/
 /* .5rem # 8px, 1rem # 16px, 1.5rem # 24px ... */
 /*########## Font weight ##########*/
@@ -522,21 +844,45 @@ padding-book-info */
 /* Font size for large devices */
 /*########## Variables Dark theme ##########*/
 /*########## Button Dark/Light ##########*/
+.dark {
+  --favorite-hue: 200;
+  --primary-color: hsl(var(--favorite-hue), 100%, 50%);
+  --dark-primary-color: hsl(var(--favorite-hue), 100%, 30%);
+  --light-primary-color: hsl(var(--favorite-hue), 100%, 7%);
+  --white-color-fav: hsl(var(--favorite-hue), 0%, 7%);
+  --card-color: hsl(var(--favorite-hue), 0%, 12%);
+  --gray-color: hsl(var(--favorite-hue), 8%, 96%);
+  --text-color-light: hsl(var(--favorite-hue), 1%, 70%);
+  --text-color-dark: hsl(var(--favorite-hue), 14%, 54%);
+  --icon-color-light: hsl(var(--favorite-hue), 13%, 70%);
+  --icon-color-dark: hsl(var(--favorite-hue), 11%, 76%);
+}
+
 .book-library__book-info {
   position: absolute;
   top: 0;
   right: -1000px;
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: center;
-  row-gap: 15px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(7, auto);
+  place-items: center;
+  /* row-gap: 15px; */
   height: 100vh;
   width: 100vw;
-  padding-top: 80px;
-  background-color: hsl(219, 0%, 100%);
-  z-index: 100;
+  padding: 25px;
+  background-color: var(--dark-primary-color);
+  z-index: 1000;
   transition: 0.2s;
+}
+
+.book-info__btn-close {
+  justify-self: start;
+  align-self: start;
+}
+.book-info__btn-close i {
+  font-size: 30px;
+  color: var(--white-color-fav);
+  transition: 0.3s;
 }
 
 .book-info__cover {
@@ -550,20 +896,25 @@ padding-book-info */
   place-items: center;
   column-gap: 5px;
   padding: 15px 20px;
-  border-radius: 8px;
-  font-size: 0.938rem;
-  font-family: 900;
-  color: hsl(219, 0%, 100%);
-  background-color: hsl(219, 100%, 50%);
+  border-radius: var(--border-radius);
+  font-size: var(--normal-font-size);
+  font-family: var(--font-black);
+  color: var(--white-color-fav);
+  background-color: var(--primary-color);
   transition: 0.2s;
 }
 
 .book-info__btn-delete i {
-  color: hsl(219, 0%, 100%);
+  color: var(--white-color-fav);
 }
 
 .book-info__btn-delete:hover {
-  background-color: hsl(219, 100%, 13%);
+  background-color: var(--dark-primary-color);
+}
+
+.book-info__read-container {
+  display: flex;
+  column-gap: 15px;
 }
 
 .book-info__btn-read {
@@ -587,15 +938,36 @@ padding-book-info */
     height: 100%;
     width: 100%;
     padding: 25px 20px;
-    box-shadow: 0px 0px 10px rgba(3, 3, 3, 0.15);
+    box-shadow: var(--shadow);
     z-index: -100;
   }
+  .book-info__btn-close {
+    display: none;
+  }
 }
-/*########## Colors ##########*/
-/* Cambio de color favorito */
-/* Púrpura 250 - Verde 142 - Azul 230 - Rosa 340 */
+/*########## Reusables ##########*/
+.open-book-info {
+  right: 0;
+}
+
+/* ########## Colors ########## */
+/* Cambio de color favorito 219 */
 /* Modo de color HSL */
-/* Colores en base al color favorito */
+:root {
+  --favorite-hue: 200; /* Púrpura 250 - Verde 142 - Azul 230 - Rosa 340 */
+  --primary-color: hsl(var(--favorite-hue), 100%, 50%);
+  --dark-primary-color: hsl(var(--favorite-hue), 100%, 13%);
+  --light-primary-color: hsl(var(--favorite-hue), 100%, 95%);
+  /* Colores en base al color favorito */
+  --white-color-fav: hsl(var(--favorite-hue), 0%, 100%);
+  --gray-color: hsl(var(--favorite-hue), 8%, 96%);
+  --text-color-light: hsl(var(--favorite-hue), 1%, 27%);
+  --text-color-dark: hsl(var(--favorite-hue), 14%, 54%);
+  --icon-color-light: hsl(var(--favorite-hue), 13%, 47%);
+  --icon-color-dark: hsl(var(--favorite-hue), 11%, 56%);
+  --border-radius: 8px;
+}
+
 /*########## Font and typography ##########*/
 /* .5rem # 8px, 1rem # 16px, 1.5rem # 24px ... */
 /*########## Font weight ##########*/
@@ -608,6 +980,20 @@ padding-book-info */
 /* Font size for large devices */
 /*########## Variables Dark theme ##########*/
 /*########## Button Dark/Light ##########*/
+.dark {
+  --favorite-hue: 200;
+  --primary-color: hsl(var(--favorite-hue), 100%, 50%);
+  --dark-primary-color: hsl(var(--favorite-hue), 100%, 30%);
+  --light-primary-color: hsl(var(--favorite-hue), 100%, 7%);
+  --white-color-fav: hsl(var(--favorite-hue), 0%, 7%);
+  --card-color: hsl(var(--favorite-hue), 0%, 12%);
+  --gray-color: hsl(var(--favorite-hue), 8%, 96%);
+  --text-color-light: hsl(var(--favorite-hue), 1%, 70%);
+  --text-color-dark: hsl(var(--favorite-hue), 14%, 54%);
+  --icon-color-light: hsl(var(--favorite-hue), 13%, 70%);
+  --icon-color-dark: hsl(var(--favorite-hue), 11%, 76%);
+}
+
 .book-info__form {
   position: absolute;
   top: -1000px;
@@ -618,7 +1004,8 @@ padding-book-info */
   height: 100vh;
   width: 100vw;
   padding: 25px 30px;
-  background-color: hsl(219, 0%, 100%);
+  background-color: var(--white-color-fav);
+  z-index: 1000;
   transition: 0.5s;
 }
 
@@ -632,9 +1019,10 @@ padding-book-info */
 .form-textarea {
   width: 100%;
   padding: 10px;
-  border: 1px solid hsl(219, 100%, 13%);
+  border: 1px solid var(--dark-primary-color);
   border-radius: 5px;
-  /* background-color: variables.$light-primary-color */
+  outline-color: var(--primary-color);
+  color: var(--primary-color);
 }
 
 .form-checkbox {
@@ -646,26 +1034,28 @@ padding-book-info */
   justify-content: center;
   column-gap: 5px;
   padding: 15px;
-  border-radius: 8px;
-  font-size: 0.938rem;
-  font-family: 900;
-  color: hsl(219, 0%, 100%);
-  background-color: hsl(219, 100%, 50%);
+  border-radius: var(--border-radius);
+  font-size: var(--normal-font-size);
+  font-family: var(--font-black);
+  color: var(--white-color-fav);
+  background-color: var(--primary-color);
   transition: 0.2s;
 }
 
 .book-info__btn-submit:hover {
-  background-color: hsl(219, 100%, 13%);
+  background-color: var(--dark-primary-color);
 }
 
 /*########## Media Queries - Tablet ##########*/
 @media (min-width: 500px) {
   .book-info__form {
     grid-area: 1/2/2/3;
-    left: -1000px;
+    top: 0;
+    left: -1200px;
     height: 100%;
     width: 100%;
     padding: 25px 40px;
+    box-shadow: 1px 1px 2px black;
   }
 }
 /*########## Media Queries - Desktop ##########*/
@@ -684,6 +1074,7 @@ padding-book-info */
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     border: 1px solid rgba(255, 255, 255, 0.18);
+    transition: 1s;
   }
   .book-info__form {
     grid-area: auto;
@@ -693,6 +1084,14 @@ padding-book-info */
     border-radius: 8px;
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   }
+}
+/*########## Reusables ##########*/
+.open-form {
+  top: 0;
+}
+
+.open-left-form {
+  left: 0;
 }
 
 /*# sourceMappingURL=styles.css.map */

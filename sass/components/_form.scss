@@ -10,7 +10,8 @@
   height: 100vh;
   width: 100vw;
   padding: 25px 30px;
-  background-color: variables.$white-color-fav;
+  background-color: var(--white-color-fav);
+  z-index: 1000;
   transition: 0.5s;
 }
 
@@ -24,9 +25,10 @@
 .form-textarea {
   width: 100%;
   padding: 10px;
-  border: 1px solid variables.$dark-primary-color;
+  border: 1px solid var(--dark-primary-color);
   border-radius: 5px;
-  /* background-color: variables.$light-primary-color */
+  outline-color: var(--primary-color);
+  color: var(--primary-color);;
 }
 
 .form-checkbox {
@@ -38,26 +40,28 @@
   justify-content: center;
   column-gap: 5px;
   padding: 15px;
-  border-radius: variables.$boder-radius;
-  font-size: variables.$normal-font-size;
-  font-family: variables.$font-black;
-  color: variables.$white-color-fav;
-  background-color: variables.$primary-color;
+  border-radius: var(--border-radius);
+  font-size: var(--normal-font-size);
+  font-family: var(--font-black);
+  color: var(--white-color-fav);
+  background-color: var(--primary-color);
   transition: 0.2s;
 }
 
 .book-info__btn-submit:hover {
-  background-color: variables.$dark-primary-color;
+  background-color: var(--dark-primary-color);
 }
 
 /*########## Media Queries - Tablet ##########*/
 @media (min-width: 500px) {
   .book-info__form {
     grid-area: 1/2/2/3;
-    left: -1000px;
+    top: 0;
+    left: -1200px;
     height: 100%;
     width: 100%;
     padding: 25px 40px;
+    box-shadow: 1px 1px 2px black;
   }
 }
 
@@ -78,6 +82,7 @@
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     border: 1px solid rgba(255, 255, 255, 0.18);
+    transition: 1s;
   }
 
   .book-info__form {
@@ -88,4 +93,13 @@
     border-radius: 8px;
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   }
+}
+
+/*########## Reusables ##########*/
+.open-form {
+  top: 0;
+}
+
+.open-left-form {
+  left: 0;
 }
